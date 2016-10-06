@@ -1,0 +1,18 @@
+language: generic
+os:
+- linux
+- osx
+env:
+  global:
+  - THIS_PACKAGE=csdms-permamodel
+  - TRAVIS_PYTHON_VERSION="2.7"
+  - NUMPY_VERSION="1.9"
+  - secure: vQyG9suZp6YN7bxMjmrNIztRphA0NdDBRQBNM2Hp/mru0xp+S2aoVConUxZ2JIjTI+3245WBVSnXs1sSq2558isTQw1/dCqLgNgk0gDRwvU0TClHd5q1TFkK+lD0OCHQDCG5SDkEtsb6s7BXDN1wyIectpQbzxsiqPvrzC7nYt8n85jAYixD5NYubtXf8IWkpCpOecb0RYcyh7AtnBZvqHmKBPsvaBjQnIs03OK1qwnwmuVgKtRcM/K310W5buvDP9lPnACpbl5t7hzUru/yapeskzNHgM4UG31SGg9a+BqBK/b/dd+QB2AedPcSu11L5oDPybefKDeY7clEXiSzFn3s6y3v7ECbEq6VJw6mEEdeL5IOyIYCywlbGhHTw/Ud2jSL6EYnRwTEXJtswsIfVTTq5Nu+VsUoaqx/hnXD7qhE8e7KkyHLTwh8AQJ5ytLcmUoCqqw9gDkJQdTI52YSAnoL5WAVmHT2XMBq5rgUzvoXGUeN5dUJCShZSX80p9Iz8ya0EIJhhBrhUlONb265/k957NXIyHgL2Nwf1Ze6q6JvZlMCreHNxMyZgh7YwbPv1Giato5yeCNWIZFPvuQn6JuhAmBh4LPiRz8sgfZlEVFBOO0m8R2Y3p1Mjrq1cPmH9myRdSbYZ1+pstKlOYkKfgSTBnsHZvfZ1msdPxG/yYw=
+sudo: false
+install:
+- bash ci/travis/install_python.sh $HOME/miniconda
+- export PATH="$HOME/miniconda/bin:$PATH"
+script:
+- conda build recipe -c conda-forge -c csdms/channel/dev -c csdms
+after_success:
+- bash ci/travis/deploy_to_anaconda.sh $THIS_PACKAGE
