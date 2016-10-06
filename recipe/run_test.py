@@ -36,6 +36,6 @@ except ImportError:
 else:
     model = FrostNumberModel()
 
-for default in ht.defaults:
+for default in model.defaults:
     print('{name}: {val} {units}'.format(
         name=default[0], val=default[1][0], units=default[1][1]))
