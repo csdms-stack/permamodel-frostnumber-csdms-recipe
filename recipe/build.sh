@@ -1,3 +1,3 @@
 #! /bin/bash
 
-bmi babelize . --prefix=$PREFIX
+bmi babelize .bmi/frost_number --prefix=$PREFIX
