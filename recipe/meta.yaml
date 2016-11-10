@@ -1,6 +1,5 @@
-{% set name = "csdms-permamodel" %}
+{% set name = "csdms-permamodel-frostnumber" %}
 {% set version = "0.1" %}
-{% set build_string = environ.get('GIT_BUILD_STR', '') %}
 
 package:
   name: {{ name }}
@@ -21,3 +20,9 @@ test:
   requires:
     - pymt
     - bmi-tester
+
+about:
+  home: https://github.com/permamodel/permamodel
+  license: MIT
+  summary: The Frost-number model from Permamodel.
+  dev_url: https://github.com/permamodel/permamodel
