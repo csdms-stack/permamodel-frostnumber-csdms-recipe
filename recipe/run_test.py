@@ -4,7 +4,7 @@ import os
 os.mkdir('_testing')
 os.chdir('_testing')
 
-from pymt.components import Plume as Model
+from pymt.components import FrostNumberModel as Model
 
 model = Model()
 
