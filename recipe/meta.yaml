@@ -22,7 +22,7 @@ test:
     - bmi-tester
 
 about:
-  home: https://github.com/permamodel/permamodel
+  home: http://csdms.colorado.edu/wiki/Model:Frost_Model
   license: MIT
-  summary: The Frost-number model from Permamodel.
+  summary: The point version of the Frost Number model from Permamodel.
   dev_url: https://github.com/permamodel/permamodel
