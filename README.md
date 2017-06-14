@@ -9,11 +9,11 @@ Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/csdms-permamodel-
 
 # About csdms-permamodel-frostnumber
 
-Home: https://github.com/permamodel/permamodel
+Home: http://csdms.colorado.edu/wiki/Model:Frost_Model
 
 Package license: MIT
 
-Summary: The Frost-number model from Permamodel.
+Summary: The point version of the Frost Number model from Permamodel.
 
 # Installing csdms-permamodel-frostnumber
 
