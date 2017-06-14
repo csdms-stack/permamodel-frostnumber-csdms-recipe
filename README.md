@@ -1,11 +1,6 @@
-
-
-
-
-
 # Current Build Status
 
-Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/csdms-permamodel-frostnumber-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/csdms-permamodel-frostnumber-recipe)
+Linux, OSX: [![Build Status](https://travis-ci.org/csdms-stack/permamodel-frostnumber-csdms-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/permamodel-frostnumber-csdms-recipe)
 
 # About csdms-permamodel-frostnumber
 
