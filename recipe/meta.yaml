@@ -12,9 +12,12 @@ requirements:
   build:
     - bmi-babel
     - permamodel
+    - scipy <=0.18.1
   run:
     - bmi-babel
     - permamodel
+    - scipy <=0.18.1
+    - matplotlib
 
 test:
   requires:
