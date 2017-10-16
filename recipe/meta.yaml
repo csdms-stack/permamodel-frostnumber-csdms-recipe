@@ -1,5 +1,5 @@
 {% set name = "csdms-permamodel-frostnumber" %}
-{% set version = "0.1" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name }}
@@ -7,14 +7,18 @@ package:
 
 source:
   git_url: https://github.com/permamodel/permamodel
+  git_rev: v{{ version }}
 
 requirements:
   build:
     - bmi-babel
     - permamodel
+    - scipy <=0.18.1
   run:
     - bmi-babel
     - permamodel
+    - scipy <=0.18.1
+    - matplotlib
 
 test:
   requires:
