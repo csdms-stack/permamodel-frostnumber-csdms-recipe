@@ -5,9 +5,6 @@ package:
   name: {{ name }}
   version: {{ version }}
 
-source:
-  git_url: https://github.com/permamodel/permamodel
-
 requirements:
   build:
     - babelizer
