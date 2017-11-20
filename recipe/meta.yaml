@@ -21,6 +21,7 @@ requirements:
     - babelizer
     - permamodel
     - scipy <=0.18.1
+    - matplotlib
 
 test:
   requires:
