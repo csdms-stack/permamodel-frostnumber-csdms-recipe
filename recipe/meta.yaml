@@ -5,6 +5,9 @@ package:
   name: {{ name }}
   version: {{ version }}
 
+build:
+  number: 1
+
 requirements:
   build:
     - babelizer
