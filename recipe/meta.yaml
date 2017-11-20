@@ -8,6 +8,9 @@ package:
 build:
   number: 1
 
+source:
+  git_url: https://github.com/permamodel/permamodel
+
 requirements:
   build:
     - babelizer
