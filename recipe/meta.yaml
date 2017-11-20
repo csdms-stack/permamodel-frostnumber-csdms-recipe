@@ -15,9 +15,11 @@ requirements:
   build:
     - babelizer
     - permamodel
+    - scipy <=0.18.1
   run:
     - babelizer
     - permamodel
+    - scipy <=0.18.1
 
 test:
   requires:
