@@ -10,10 +10,10 @@ source:
 
 requirements:
   build:
-    - bmi-babel
+    - babelizer
     - permamodel
   run:
-    - bmi-babel
+    - babelizer
     - permamodel
 
 test:
