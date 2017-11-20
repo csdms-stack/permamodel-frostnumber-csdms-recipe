@@ -19,7 +19,6 @@ requirements:
 test:
   requires:
     - pymt
-    - bmi-tester
 
 about:
   home: http://csdms.colorado.edu/wiki/Model:Frost_Model
