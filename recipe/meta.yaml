@@ -5,17 +5,20 @@ package:
   name: {{ name }}
   version: {{ version }}
 
+build:
+  number: 1
+
 source:
   git_url: https://github.com/permamodel/permamodel
   git_rev: v{{ version }}
 
 requirements:
   build:
-    - bmi-babel
+    - babelizer
     - permamodel
     - scipy <=0.18.1
   run:
-    - bmi-babel
+    - babelizer
     - permamodel
     - scipy <=0.18.1
     - matplotlib
@@ -23,7 +26,6 @@ requirements:
 test:
   requires:
     - pymt
-    - bmi-tester
 
 about:
   home: http://csdms.colorado.edu/wiki/Model:Frost_Model
