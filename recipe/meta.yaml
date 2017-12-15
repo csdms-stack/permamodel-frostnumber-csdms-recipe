@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 build:
-  number: 1
+  number: 2
 
 source:
   git_url: https://github.com/permamodel/permamodel
@@ -16,12 +16,10 @@ requirements:
   build:
     - babelizer
     - permamodel
-    - scipy <=0.18.1
   run:
-    - babelizer
+    - cca-babel <2
+    - cca-spec-babel
     - permamodel
-    - scipy <=0.18.1
-    - matplotlib
 
 test:
   requires:
