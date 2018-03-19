@@ -22,6 +22,7 @@ requirements:
 
 test:
   requires:
+    - netcdf-fortran=4.4.4=5  # tmp fix for ESMF
     - pymt
 
 about:
